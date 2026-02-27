@@ -1,38 +1,37 @@
 # Capstone-Project
-# 🪙 XAU/USD Gold Price Analytics & Forecasting (2004-2026)
-**Capstone Project - Data Science & Generative AI**
+XAU/USD Gold Price Analytics & AI-Driven Forecasting (2004-2026)
+**Data Science Capstone Project | Final Submission - Feb 2026**
 
 ## 📌 Project Overview
-This project demonstrates a full-stack data science workflow to analyze and predict Gold (XAU/USD) prices. It covers the entire pipeline from **ETL (SQL/Python)**, **Exploratory Data Analysis (EDA)**, to **Machine Learning (XGBoost/LSTM)**, concluding with an **AI-driven Market Advisor Demo**.
+This project presents a modular data science pipeline designed to analyze and predict Gold (XAU/USD) price movements using 20+ years of historical hourly data. It integrates **SQL-based ETL**, **Advanced Feature Engineering**, **Random Forest Classification**, and a **Generative AI Trading Assistant Demo**.
+
+## 🚀 Key Features (Assessment Criteria Alignment)
+- **Modular ETL Pipeline**: Robust data extraction using Python and SQL (SQLite) to handle 120,000+ rows of tick data.
+- **Statistical Engineering**: Implementation of RSI, SMA (20/50), and Volatility features for trend identification.
+- **Machine Learning**: Random Forest Classifier for direction prediction (Up/Down) with rigorous chronological backtesting.
+- **Generative AI Demo**: A "Market Strategist" GPT-4o integration that translates technical signals into human-readable trading insights.
 
 ---
 
-## 🚀 Key Features & Innovation
-- **Robust ETL Pipeline**: Automated cleaning and feature engineering of 20+ years of tick/daily data.
-- **Predictive Modeling**: Comparison between traditional ML (Random Forest/XGBoost) and Deep Learning (LSTM).
-- **Generative AI Demo**: A specialized "AI Market Strategist" that interprets technical indicators and generates natural language investment summaries.
-- **2026 Market Context**: Analysis of the historic gold surge leading into early 2026.
-
----
-
-## 🛠️ Tech Stack
-- **Data**: Python (Pandas, NumPy), SQL (SQLite)
-- **ML/DL**: Scikit-learn, XGBoost, PyTorch/TensorFlow
-- **GenAI**: OpenAI GPT-4o (Implementation via Demo scripts)
-- **Visualization**: Matplotlib, Seaborn, Tableau/Power BI
+## 🛠️ Technical Stack
+- **Languages**: Python 3.12, SQL (SQLite)
+- **Libraries**: Pandas, NumPy, Scikit-learn, SQLAlchemy, Seaborn, Matplotlib
+- **AI/LLM**: OpenAI GPT-4o API (Mock Demo Implementation)
+- **Version Control**: Git & GitHub
 
 ---
 
 ## 📂 Project Structure
 ```text
-├── data/               
-│   ├── raw/            # [Action Required] Place Kaggle CSV here
-│   └── processed/      # Cleaned data and technical indicators
+Gold-Price-Prediction/
+├── src/                # Modular Source Code
+│   ├── data_loader.py         # ETL & SQL Management
+│   ├── feature_engineering.py  # Technical Indicators (RSI/SMA)
+│   ├── model_trainer.py       # Random Forest Training & Metrics
+│   └── ai_demo.py             # Generative AI Logic
 ├── notebooks/          
-│   ├── 01_EDA.ipynb    # Visualizing 20-year trends & volatility
-│   └── 02_Modeling.ipynb # Training XGBoost & LSTM models
-├── src/                
-│   ├── data_loader.py  # ETL process (SQL/CSV)
-│   └── ai_demo.py      # Generative AI "Market Strategist" Demo script
-├── reports/            # Final Report (PDF) & Presentation (PPT)
-└── README.md
+│   └── main.ipynb      # 👈 MAIN ENTRY POINT (Execution Hub)
+├── data/               
+│   └── raw/            # [Note] Place XAU_1h_data.csv here
+├── requirements.txt    # Project Dependencies
+└── README.md           # Documentation
